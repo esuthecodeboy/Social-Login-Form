@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    box-sizing:border-box;
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    margin:auto;
+    max-width:60%;
+    background-color: #f2f2f2;
+    padding: 20px 0 0px 0;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+h2{
+    text-align:center;
+    color:#000;
+    font-weight:600;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:20px;
+}
+.top-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    padding-bottom:30px;
+    padding-top:10px;
+}
+.social-login{
+    width:40%;
+    display:block;
+}
+.facebook,
+.twitter,
+.google{
+    width:100%;
+    height:45px;
+    border-radius:5px;
+    border:none;
+    color:white;
+    margin-top:10px;
+    opacity:0.85;
+    cursor:pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.facebook:hover,
+.twitter:hover,
+.google:hover{
+    opacity: 1;
+}
+.facebook{
+    background-color:#3B5998 ;
+}
+.twitter{
+    background-color: #55ACEE;
+}
+.google{
+    background-color: #dd4b39;
+}
+.form-input{
+    width:40%;
+}
+input[type=text],
+input[type=password],
+.login{
+    width:100%;
+    box-sizing:border-box;
+    height:28.5%;
+    border-radius:5px;
+    border:none;
+    color:grey;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:500;
+}
+/* PAssword Validation */
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  #message p {
+    padding: 10px 35px;
+    font-size: 18px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: green;
+  }
+  
+  .valid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10004;";
+  }
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+  .invalid:before {
+    position: relative;
+    left: -35px;
+    content: "&#10006;";
+  }
+  /* Password Validation stops */
+input[type=text],
+input[type=password]{
+    padding-left:10px;
+}
+input[type=password],
+.login{
+    margin-top:10px;
+}
+.login{
+    width:100%;
+    height:30%;
+    background-color: #4CAF50;
+    color:white;
+    cursor: pointer;
+    opacity:0.85;
+}
+.login:hover{
+    opacity:1;
+}
+.or{
+    position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+.span-or{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px 10px;
+}
+.sign-in{
+    display:none;
+}
+.footer{
+    width:100%;
+    background-color: #666;
+    display:flex;
+    flex-wrap:wrap;
+    /* justify-content:space-around; */
+    
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.footer-left,
+.footer-right{
+    text-align: center;
+    width:50%;
+    padding:20px;
+    margin-bottom:0;
+}
+a{
+    text-decoration: none;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+    cursor:pointer;
+}
+.facebook,
+.twitter,
+.google{
+    text-align:left;
+}
+/* input[type=search]{
+    width: 20%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding:15px;
+    background-color: white;
+    transition: width 500ms ease-in-out;
+}
+input[type=search]:focus{
+    width:50%;
+} */
+@media screen and (max-width:800px){
+    .or{
+        display:none;
+    }
+    .social-login{
+        width:80%;
+        display:block;
+        text-align:left;
+    }
+    .form-input{
+        width:80%;
+        padding-bottom:50px;
+    }
+    .sign-in{
+        display:block;
+        text-align:center;
+    }
+    input[type=text],
+    input[type=password],
+    .login{
+        height:50%;
+    }
+    .footer-left,
+    .footer-right{
+        width:100%;
+        display: block;
+}
+}
+@media screen and (max-width:500px){
+    .container{
+    margin:auto;
+    max-width:90%;
+    background-color: #f2f2f2;
+    padding: 20px 0 0px 0;
+    justify-content: center;
+    border-radius: 5px;
+    position: relative;
+}
+}
